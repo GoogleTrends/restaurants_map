@@ -215,14 +215,13 @@ path{
     display: flex;
     max-width: 700px;
     /* display: none; */
-    margin-bottom: 100px;
 }
 
 #map {
     height: 100%;
-    width: 600px;
+    width: 280px;
     flex-grow: 1;
-    height: 600px;
+    height: 460px;
     margin: 0 auto;
     z-index: 0;
 }
@@ -232,7 +231,7 @@ path{
     background: white;
     box-shadow: 0 0px 25px 0 rgba(0,0,0,0.15);
     z-index: 1;
-    max-width: 300px;
+    max-width: 240px;
     font-family: 'Product Sans';
 }
 
@@ -240,7 +239,7 @@ path{
     text-align: center;
     margin: 0px;
     font-size: 28px;
-    margin-top: 30px;
+    margin-top:10px;
     color: #404040;
     font-family: 'Product Sans';
     line-height: 1.2;
@@ -336,25 +335,29 @@ path{
     font-size: 11px;
     font-weight: 900;
     color: #EB5757;
+    margin-top:5px;
+    margin-bottom: 5px;
 }
 
 .city-selection {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    height: 320px;
+    height: auto;
     color: #9E9E9E;
     width: 95%;
     margin: 0 auto;
+    justify-content: center;
 }
 
 .city-selection-city {
     margin: 0px;
-    font-size: 14px;
+    font-size: 13px;
     text-align: center;
-    line-height: 1.5;
+    line-height: 2;
     cursor: pointer;
     cursor: hand;
+    padding:0px 5px;
 }
 
 .all-together-chart-svg .state-borders{
@@ -492,11 +495,11 @@ path{
 
 @media only screen and (max-width: 700px) {
   .map-text{
-    max-width:100%;
+    /* max-width:100%; */
   }
   .city-selection{
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     height: auto;
     margin-bottom: 11px;
   }
@@ -504,7 +507,66 @@ path{
     padding:0px 10px;
   }
   .map-wrapper{
-    flex-wrap:wrap;
+    /* flex-wrap:wrap; */
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+  .map-text{
+    flex-grow:1;
+    width:1px;
+    max-width: none;
+    /* max-width:100%; */
+  }
+  .map-text-head{
+    font-size:16px;
+  }
+  .map-text-sub{
+    display:none;
+  }
+  .map-text-city-head{
+    margin: 0px;
+    margin-top: 8px;
+    margin-bottom: 9px;
+  }
+  #map{
+    flex-grow:0;
+  }
+  .chart-title{
+    font-size: 16px;
+  }
+  .city-selection{
+    flex-direction: row;
+    height: auto;
+    margin-bottom: 11px;
+  }
+  .city-selection-city{
+    font-size: 12px;
+    padding: 0px 5px;
+    line-height: 1.5;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #map{
+    width:220px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  #map{
+    width:180px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  #map{
+    width:180px;
+  }
+  .city-selection-city{
+    line-height: 1.1;
+    font-size: 11px;
   }
 }
 

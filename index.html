@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang='en' data-version='1516739930801'>
+<html lang='en' data-version='1516755211941'>
 
 <head>
 
@@ -97,9 +97,17 @@
 		</div>
 
 	</main>
-
+	<script>
+	  // tell the embed parent frame the height of the content
+	  if (window.parent && window.parent.parent){
+	    window.parent.parent.postMessage(["resultsFrame", {
+	      height: document.body.getBoundingClientRect().height,
+	      slug: "None"
+	    }], "*")
+	  }
+	</script>
 	<script src='assets/scripts/d3.v4.10.2+jetpack.min.js'></script>
-	<script src='bundle.js?version=1516739930801' async></script>
+	<script src='bundle.js?version=1516755211941' async></script>
 	</script>
 </body>
 
