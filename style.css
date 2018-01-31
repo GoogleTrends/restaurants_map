@@ -1,3 +1,4 @@
+
 .head-to-head path{
   /* stroke-width: .8px; */
   /* stroke: rgba(0, 0, 0, 0.2); */
@@ -221,7 +222,7 @@ path{
     height: 100%;
     width: 280px;
     flex-grow: 1;
-    height: 460px;
+    height: 500px;
     margin: 0 auto;
     z-index: 0;
 }

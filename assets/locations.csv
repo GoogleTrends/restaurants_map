@@ -1,6 +1,7 @@
 city,long,lat
 new york city,-74,40.7
 boston,-71.0589,42.36
+Baltimore,-76.6122,39.2904
 Anchorage,-149.9003,61.2181
 Los Angeles,-118.4108,34.0194
 Chicago,-87.6818,41.8376
@@ -35,7 +36,7 @@ New Orleans,-89.9390,30.0686
 Cleveland,-81.6795,41.4781
 St Louis,-90.2446,38.6357
 Pittsburgh,-79.9766,40.4398
-Orlando,81.3792,28.5383
+Orlando,-81.3792,28.5383
 Boise,-116.2311,43.5985
 Des Moines,-93.6167,41.5739
 Montgomery,-86.2686,32.3463
